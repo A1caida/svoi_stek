@@ -1,0 +1,21 @@
+﻿  struct stack.cpp
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,1): error C2597: недопустимая ссылка на нестатический член "strucstack<double>::aa"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11): message : во время компиляции функции-члена класс шаблон "strucstack<double>::Node::Node(void)"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(46): message : выполняется компиляция ссылки на экземпляр шаблон функции "strucstack<double>::Node::Node(void)"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(37): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "strucstack<double>::Node"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(34): message : во время компиляции функции-члена класс шаблон "strucstack<double>::~strucstack(void)"
+C:\Users\A1caida\source\repos\struct stack\struct stack\struct stack.cpp(14): message : выполняется компиляция ссылки на экземпляр шаблон функции "strucstack<double>::~strucstack(void)"
+C:\Users\A1caida\source\repos\struct stack\struct stack\struct stack.cpp(14): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "strucstack<double>"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,1): error C2597: недопустимая ссылка на нестатический член "strucstack<double>::bb"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,1): error C2440: инициализация: невозможно преобразовать "unknown" в "strucstack<double>::Node *"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,1): message : Не существует контекста, в котором такое преобразование возможно
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(12,1): error C2439: strucstack<double>::Node::next: не удается инициализировать член
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(13): message : см. объявление "strucstack<double>::Node::next"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): error C2440: инициализация: невозможно преобразовать "unknown" в "T"
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): error C2440:         with
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): error C2440:         [
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): error C2440:             T=double
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): error C2440:         ]
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(11,15): message : Контекст не позволяет устранить неоднозначность перегруженной функции
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(12,1): error C2439: strucstack<double>::Node::elem: не удается инициализировать член
+C:\Users\A1caida\source\repos\struct stack\struct stack\strucstack.h(14): message : см. объявление "strucstack<double>::Node::elem"
