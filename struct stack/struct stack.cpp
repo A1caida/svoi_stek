@@ -1,47 +1,51 @@
-﻿#include <iostream>
+#include <iostream>
 #include "strucstack.h"
 
-struct cock
+template<typename T>
+void uwu(strucstack<T> owo)
 {
 	int a;
-	int b;
-	double c;
-};
+	cout << "Сколько значений" << endl;
+	//cin >> a;
+	while (!(cin >> a) || (cin.peek() != '\n'))
+	{
+		cin.clear();
+		cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+		cout << "Некоректные данные" << endl;
+	}
+	for (size_t i = 0; i < a; i++)
+	{
+		T temp;
+		cout << "Введите значение" << endl;
+		while (!(cin >> temp) || (cin.peek() != '\n'))
+		{
+			cin.clear();
+			cin.ignore((numeric_limits<streamsize>::max)(), '\n');
+			cout << "Некоректные данные" << endl;
+		}
+		owo.push(temp);
+	}
+	owo.print(); cout << endl;
+	owo.top(); cout << endl; owo.print();
+
+}
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	strucstack<double> owo;
-	
-	//strucstack<cock> owo1;
-	//cock t;
-	int a = 1;
-	int b = 2;
-	double c = 3.2;
-	int ct = 0;
-	owo.top();
-	while (ct++ != 5)
-	{
-		double temp;
-		cin >> temp;
-		owo.push(temp);
-	}
+	strucstack<int> owo;
+	strucstack<double> owo1;
+	strucstack<float> owo2;
+	strucstack<char> owo3;
+	strucstack<string> owo4;
+	strucstack<bool> owo5;
 
-	
+	uwu(owo);
+	uwu(owo1);
+	uwu(owo2);
+	uwu(owo3);
+	uwu(owo4);
+	uwu(owo5);
 
-	cout << "\nделете\n";
-
-	owo.top(); 
-	cout << endl;
-	owo.print();
-	owo.top();
-	cout << endl;
-	owo.print();
-	cout << endl;
-	cout << endl;
-	//owo1.push(t);
-	//owo1.print();
-
-	return 0;
 }
 
